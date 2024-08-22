@@ -1,4 +1,4 @@
-let app = angular.module('myApp', ['ui.router', 'cp.ngConfirm']);
+let app = angular.module('myApp', ['ui.router', 'cp.ngConfirm', 'ngMask']);
 
 app.config([
     '$stateProvider', '$urlRouterProvider', 
@@ -30,7 +30,7 @@ app.config([
                             scope: $scope,
                             type: 'red',
                             typeAnimeted: true,
-                            colunmClass: "large",
+                            columnClass: "xlarge",
                             theme: 'dark',
                             type: 'dark',
                             buttons:{

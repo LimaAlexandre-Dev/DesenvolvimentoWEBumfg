@@ -4,12 +4,26 @@
     <br/>
     <div class="row">
         <div class="col-md-6">
-            <label for="CPF"></label>
-            <input type="text" class="form-control" ng-model="pessoa.cpf" placeholder="000.000.000-00">
+            <label for="CPF">CPF</label>
+            <input type="text" class="form-control" ng-model="pessoa.cpf" mask='999.999.999-99' placeholder="000.000.000-00">
         </div>
         <div class="col-md-6">
-            <label for="RG"></label>
-            <input type="text" class="form-control" ng-model="pessoa.rg" placeholder="9.999.999-2">
+            <label for="RG">RG</label>
+            <input type="text" class="form-control" ng-model="pessoa.rg" mask='99.999.999-9' placeholder="99.999.999-9">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <label for="CEP">CEP</label>
+            <input type="text" class="form-control" ng-model="consultaCep(pessoa.cep)" mask='99999-999' placeholder="00000-000">
+        </div>
+        <div class="col-md-5">
+            <label for="RUA">Rua</label>
+            <input type="text" class="form-control" ng-model="pessoa.rua" placeholder="Rua: exemplo">
+        </div>
+        <div class="col-md-4">
+            <label for="Bairro">Bairro</label>
+            <input type="text" class="form-control" ng-model="pessoa.bairro" placeholder="Zona 2">
         </div>
     </div>
 </form>
