@@ -27,7 +27,31 @@ app.config([
                         $ngConfirm({
                             title: 'Editar',
                             contentUrl: './pages/user/form.html',
-                            scope: $scope
+                            scope: $scope,
+                            type: 'red',
+                            typeAnimeted: true,
+                            colunmClass: "large",
+                            theme: 'dark',
+                            type: 'dark',
+                            buttons:{
+                                save:{
+                                    text: "Salvar",
+                                    btnClass: 'btn-green',
+                                    action: function(){
+                                        alert('Enviar')
+                                    }
+                                },
+                                cancel:{
+                                    text: "Cancelar",
+                                    btnClass: 'btn-red',
+                                    action: function(){
+                                        alert('Enviar')
+                                    }
+                                }
+                                
+                                    
+                                
+                            }
                         })
                     }
                 }
